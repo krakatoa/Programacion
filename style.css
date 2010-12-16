@@ -9,21 +9,25 @@ p {
   text-indent: 15px;
 }
 
-p.complementary {
+p.traducir {
+  color: blue;
+}
+
+p.complementario {
   font-size: 10px;
   background-color: lightgray;
   padding: 5px;
 }
 
-p.definition {
+p.definicion {
   border: 1px solid black;
   font-style: italic;
   padding: 12px 10px 15px 10px;
 }
 
-p.example { }
+p.ejemplo { }
 
-p.missing {
+p.completar {
   font-weight: bold;
   color: red;
 }
