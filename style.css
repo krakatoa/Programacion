@@ -16,11 +16,12 @@ p.complementary {
 }
 
 p.definition {
+  border: 1px solid black;
   font-style: italic;
+  padding: 12px 10px 15px 10px;
 }
 
-p.example {
-}
+p.example { }
 
 p.missing {
   font-weight: bold;
