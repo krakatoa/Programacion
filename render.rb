@@ -10,7 +10,7 @@ file.each_line { |line|
   if matches
     name = matches[2]
     indent = matches[1].size
-    partial = File.read("_#{name}.haml")
+    partial = File.read("#{name}.haml")
     partial.each_line { |partial_line|
       output << " " * indent << partial_line
     }
