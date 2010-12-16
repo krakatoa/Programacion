@@ -1,3 +1,4 @@
+%a{:name =>  "encapsulamiento"}
 %h2= "Encapsulamiento"
 %p
   Object diagrams show that an object's variables make up the center, or nucleus, of the object. Methods surround and hide the object's nucleus from other objects in the program. Packaging an object's variables within the protective custody of its methods is called encapsulation.
@@ -8,6 +9,16 @@
 %p.complementary
   Software encapsulation is a concept that's almost as old as software itself. As early as the 1940s, programmers noticed that the same pattern of instructions would appear several times within the same program. People (such as Maurice Wilkes and his colleagues at Cambridge University) soon realized that such a repeating pattern could be hived away to a corner of the program and invoked by a single name from several different points in the main program.
   Thus was born the subroutine, as this encapsulation of instructions was termed. The subroutine was clearly a good way to save computer memory -a very precious commodity in those days. However, people subsequently realized that the subroutine also saved human memory: it represented a conceptual chunk that a person could (at one level, at least) consider and manipulate as a single idea.
+%p
   Encapsulation in object-orientation has a purpose similar to that of a subroutine. But encapsulation is structurally more sophisticated.
-.def
+%p.definition
   Object-oriented encapsulation is the packaging of operations and attributes representing state into and object type so that the state is accessible or modifiable only via the interface provided by the encapsulation.
+%p
+  An object consists of a set of operations and a set of attributes.
+  Each operation is a procedure or function that's normally visible to other objects, which means that it can be called upon by other objects.
+  Attributes represent the information that an object remembers. Attributes are accessed and updated only via an object's operations. In other words, no other object can access an attribute by directly grabbing the underlying variable(s) that implements the attribute. Another object that need the information held by an attribute can access the information only by appeal to one of the object's operations.
+  Since only the object's operations may read and update the object's attributes, these operations form a protective ring around the central core of variables implemented within the object.
+%p.example.missing
+  For example, the operation location... x, y, attrs... [...] Agregar ejemplo!
+%p
+  In the interest of accuracy, I should point out that many object-oriented languages allow programmers to designate each attribute and operation as public (visible to other objects) or private (visible only within the object).

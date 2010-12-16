@@ -14,3 +14,15 @@ p.complementary {
   background-color: lightgray;
   padding: 5px;
 }
+
+p.definition {
+  font-style: italic;
+}
+
+p.example {
+}
+
+p.missing {
+  font-weight: bold;
+  color: red;
+}
