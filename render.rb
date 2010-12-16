@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 require 'rubygems'
 require 'haml'
 
@@ -21,5 +22,5 @@ file.each_line { |line|
 
 haml = Haml::Engine.new(output, {:attr_wrapper => "\""})
 
-render = File.open('curso.html', 'w')
+render = File.open('index.html', 'w')
 render.write(haml.render)

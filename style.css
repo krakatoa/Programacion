@@ -1,0 +1,16 @@
+body {
+  margin-left: 300px;
+  width: 600px;
+  font-size: 12px;
+  font-family: Verdana;
+}
+
+p {
+  text-indent: 15px;
+}
+
+p.complementary {
+  font-size: 10px;
+  background-color: lightgray;
+  padding: 5px;
+}
