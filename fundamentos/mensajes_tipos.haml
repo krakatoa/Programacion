@@ -1,3 +1,24 @@
 %a{:name =>  "fundamentosMensajesTipos"}
 %h3= "Tipos de Mensaje"
+%p.completar
+  puede patearse
 %p.traducir
+  There are three types of message that an object may receive: informative messages, interrogative messages, and imperative messages. In this section, I briefly define and give an example of each kind of message, using the "heminoid" (an example) once more. (We'll return to these message types at the very end of the book, in Chapter 12, when we examine different design options for communicating objects.)
+%p.traducir.definicion
+  An informative message is a message to an object that provides the object with information to update itself. (It is a "past-oriented" message, in that it usually informs the object of what has already taken place elsewhere).
+%p.traducir
+  Ejemplo: an example of an informative message is employee.gotMarried()
+%p.traducir
+  This message tells an object representing an employee that the actual employee gotMarried on a certain date.
+%p.traducir
+  In general, an informative message tells an object something that has happened in the part of the real world represented by that object.
+%p.traducir.definicion
+  An interrogative message is a message to an object requesting it to reveal some information about itself. (It is also known as a read, backward, or pull message). It is a "present-oriented" message, in that it asks the object for some current information.
+%p.traducir
+  An example of an interrogative message is (hom1.location, which asks the hominoid to tell us its current location on the grid). This kind of message doesn't change anything: instead, it's usually a query about the piece of the world that the receiver object represents.
+%p.traducir.definicion
+  An imperative message is a message to an object that requests the object to take some action on itself, another object, or even the environment around the system. (It is also known as a force or action message). It is a "future-oriented" message, in that it asks the object to carry out some action in the immediate future.
+%p.traducir
+  This kind of message often results in the target object's execution of some significant algorithm to work out what to do.
+%p.traducir
+  Real-time object-oriented systems, in which objects control pieces of hardware, often contain many imperative messages. These systems clearly illustrate the future-oriented spirit of an imperative message.
