@@ -1,2 +1,40 @@
 %a{:name =>  "percepcionMensajesResponsabilidades"}
 %h2= "Mensajes y Responsabilidades"
+%p
+  Los miembros de una comunidad orientada a objetos realizan pedidos de los demas. El proximo principio importante explica el uso de mensajes para iniciar accion:
+%p.definicion
+  La accion es iniciada por la transmision de un
+  %strong
+    mensaje
+  a un agente (un
+  %strong
+    objeto)
+  responsable por las acciones. El mensaje contiene el pedido de una accion y es acompaniado por cualquier informacion adicional (argumentos/parametros) necesarios para realizar el pedido. El
+  %strong
+    receptor
+  es el objeto al que es enviado el mensaje. Si el receptor acepta el mensaje, acepta la
+  %strong
+    responsabilidad
+  de realizar la accion indicada. En respuesta al mensaje, el receptor llevara a cabo algun metodo para satisfacer el pedido.
+%p
+  Hay algunos puntos para resaltar:
+  %ul
+    %li
+      El cliente que envia el pedido no necesita saber la manera en que el pedido se realiza. En esto vemos el principio de
+      %i
+        %strong
+          informacion escondida.
+    %li
+      La interpretacion del mensaje esta determinada por el receptor y puede variar en diferentes receptores. Por ejemplo, si le das el mensaje "mandar flores" a un amigo, el probablemente te hubiese entendido, pero el metodo que el use seria muy diferente del usado por el florista.
+    %li
+      En programacion orientada a objetos, el comportamiento es descripto en terminos de
+      %i
+        responsabilidad.
+    %li
+      De esta manera, los objetos son
+      %i
+        independientes.
+    %li
+      Por ultimo y no menos importante, sabemos que un objeto sera capaz de rechazar un mensaje.
+%p.ejemplo.completar
+  Ejercicio 0: identificar mensaje (con sentido), objetos, listar responsabilidades.
