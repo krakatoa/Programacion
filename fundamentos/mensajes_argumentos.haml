@@ -1,3 +1,24 @@
 %a{:name =>  "fundamentosMensajesArgumentos"}
 %h3= "Argumentos de un Mensaje"
-%p
+%p.traducir
+  Like the old-fashioned subroutine, most messages pass arguments back and forth. For instance, if we made the operation named
+  %i
+    advance
+  return a flag holding the outcome of the advancement, then we'd have
+%p.traducir
+  hom1.advance(noOfSquares)
+%p.traducir
+  {receiver object}.{method name}({arguments})
+%p.traducir
+  {receiver object}.{message}
+%p.traducir
+  Thus, the structure of a message to a receiver object is defined by the signature of the receiver method to be invoked. This signature comprises two parts: the operation name, and the list of arguments. The list of arguments may be empty.
+%p.traducir.complementario
+  The arguments of a message reflect another fundamental contrast between object-oriented software and traditional software. In a pure object-oriented environment (such as Smalltalk or Ruby), message arguments are not data; they're object handles. Message arguments are therefore like objects on the hoot!
+%p.traducir.complementario
+  A pure object-oriented environment contains only objects, each of which plays one or more of the roles that we saw above. In pure object orientation, there is no need for data, because objects can do all of data's necessary software jobs. And in Smalltalk, or Ruby (very pure object-oriented languages, there really isn't any data!
+%p.traducir.complementario
+  At runtime, there are only objects pointing to other objects (via variables) and communicating with each other by passing back and forth handles of yet other objects.
+%p.completar
+  ruby examples
+  identificar escenarios
