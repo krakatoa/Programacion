@@ -1,3 +1,32 @@
 %a{:name =>  "fundamentosMensajesEstructura"}
 %h3= "Estructura de un Mensaje"
+%p.traducir
+  A message comprises several syntactic pieces, each of which is important in its own right in object-oriented design. Indeed, we'll return to each piece of a message many times throughout the book.
+  In order for object
+  %strong
+    obj1
+  to send a sensible message to object
+  %strong
+    obj2,
+  object
+  %strong
+    obj1
+  must know three things:
+  %ol
+    %li
+      The handle of obj2. (Obviously, when you send a message you should know to whom it's going). obj1 will normally store obj2's handle in one of its variables.
+    %li
+      The name of the operation of obj2 that obj1 wishes to execute.
+    %li
+      Any supplementary information (arguments) that obj2 will require in the execution of its operation.
 %p
+  The object sending the message (obj1 in the above) is called the
+  %strong
+    sender
+  and the object receiving the message (obj2) is called the
+  %strong
+    target.
+%p
+  Sending a message in object-orientation, we appeal to an object, which then executes one of its procedural units.
+%p
+  When I discuss polymorphism, overloading, and dynamic binding, we'll see that this emphasis on "object first, procedure second" leads to an important practical difference between object-oriented structure and traditional structure. This is because different classes of objects may use the same operation name for operations that carry out different, class-specific behaviours or that carry out similar behaviour but by different means.
